@@ -8,4 +8,5 @@ WORKDIR /app
 COPY index.php .
 
 # Run the PHP script when the container starts
-CMD ["php", "index.php"]
+CMD ["php", "-S", "0.0.0.0:80", "index.php"]
+
